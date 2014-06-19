@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>How Your Rewards Stack Up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        {{ "kroger-modal.css" | asset_url | stylesheet_tag }}        
+        {{ "libs/jquery-1.9.1.min.js" | asset_url | script_tag }} 
+        <!--[if lt IE 9]>
+          {{ "ie.js" | asset_url | script_tag }}
+        <![endif]-->
+        {{ "libs/modernizr.min.js" | asset_url | script_tag }}
+
+    </head>
+    <body class="wrapper rsu">
+        {% block content %}{% endblock %}               
+        {{ "libs/jquery.collapse.js" | asset_url | script_tag }}        
+        {{ "libs/jquery.corner.min.js" | asset_url | script_tag }}
+        {{ "main.js" | asset_url | script_tag }}
+    </body>
+</html>
+

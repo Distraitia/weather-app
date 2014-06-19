@@ -1,0 +1,189 @@
+.oldIE {
+	.kroger-rsu-modal {
+		/*width: 768px;*/
+		width: 800px;
+		margin: 0 auto;
+		/*border: solid 1px #eee;*/
+		padding: 20px;
+
+		a.rsu-modal-close {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			color: #fff;
+			border-radius-top-right: 50%;
+			border-radius-bottom-right: 50%;
+			border-radius-bottom-left: 50%;
+			border-radius-top-left: 50%;
+			background: rgba(0,0,0,.5);
+			padding: 10px;
+			height: 36px;
+			width: 36px;
+		}
+
+		h1 {
+			font-size: 45px;
+			margin: 0 0 15px;
+		}
+
+		.subtext {
+			h2 {
+				font-size: 18px;
+				margin: 0;
+				line-height: 25px;
+			}
+
+			p {
+				font-size: 15px;
+				line-height: 23px;
+				margin-top: 12px;
+			}
+		}
+
+		.rsu-container {
+			/*padding: 6px 0 20px;*/
+			padding: 20px 0;
+
+			a.seeRewardsStatement {
+				h3,
+				p {
+					max-width: 200px;
+				}
+
+				p {
+					margin: 7px 0 0;
+				}
+			}
+
+			.rsu-btn {
+				* { outline: 0; }
+				margin-bottom:0;
+				height: 90px;
+				border-bottom:16px solid #f3f3f3 !important;
+
+				span.rsu-icon {
+					background-size: 50%;
+				}
+
+				&.rsu-money {
+					background: #80bf00;
+
+					span.rsu-icon {
+						background: url(../img/money-ie.png) #fff no-repeat;
+						background-size: 55%;
+						background-position: center;
+					}
+				}
+
+				&.rsu-benefits {
+					background: #ff9700;
+
+					span.rsu-icon {
+						background: url(../img/benefits-ie.png) #fff no-repeat;
+						background-size: 60%;
+						background-position: center;
+					}
+				}
+
+				&.rsu-retirement {
+					background: #006fff;
+
+					span.rsu-icon {
+						background: url(../img/retirement-ie.png) #fff no-repeat;
+						background-size: 60%;
+						background-position: center;
+					}
+				}
+
+				&.rsu-income-protection {
+					padding: 10px 16px;
+					background: #b248e8;
+
+					a {
+						top: 0;
+					}
+
+					span.rsu-icon {
+						position: relative;
+						top: 7px;
+
+						background: url(../img/protection-ie.png) #fff no-repeat;
+						background-size: 45%;
+						background-position: center;
+					}
+
+					span.word {
+						top: 2px;
+					}
+
+					span.icon {
+						top: -10px;
+					}					
+				}
+
+				&.rsu-equity {
+					background: #db5e01;
+
+					span.rsu-icon {
+						background: url(../img/equity-ie.png) #fff no-repeat;
+						background-size: 60%;
+						background-position: center;
+					}
+				}
+			}
+
+			div.rewards-list:first-child {
+				background: blue;
+			}
+
+			.pContainer {
+				margin-top: 16px;
+			}
+		}
+	}
+
+	.kroger-rsu-modal {
+		/*padding: 20px;*/
+		/*background: blue;*/
+
+		.rsu-container {
+			padding: 43px;
+
+			.mainImg {
+				/*display: block;*/
+				float: right;
+				margin-top: 36px;
+				margin-bottom: 0px;
+			}
+
+			.rewards-list {
+				float: left;
+				width: 259px;
+
+				.rsu {
+					width: 259px;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			a.seeRewardsStatement {
+				float: right;
+				height: 124px;
+				margin-top: 59px;
+				width: 352px;
+
+				h3, p {
+					max-width: 240px;
+				}
+
+				span.icon {
+					position: relative;
+					top: -17px;
+				}
+			}
+		}
+	}
+}

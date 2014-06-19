@@ -1,0 +1,458 @@
+.rsu {
+	* { box-sizing: border-box; font-family: Helvetica; }
+	span.icon {
+		font-family: 'Kroger-Modal' !important;
+	}
+}
+
+.kroger-rsu-modal {
+	position: relative;
+	a { text-decoration: none; }
+
+	.rsu-container {
+		background: #f3f3f3;
+		border-radius: 12px;
+		-webkit-border-radius: 12px;
+
+		.mainImg {
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+
+	.rewards-list {
+		padding: 0;
+		margin: 0;
+
+		& > div.rsu-btn,
+		& > h3.rsu-btn {
+			display: block;
+			width: 259px;
+			height: 80px;
+			border-radius: 12px;
+			-webkit-border-radius: 12px;
+			padding: 16px;
+			color: #fff;
+			font-size: 26px;
+			font-weight: 500;
+			border: none;
+			box-shadow: none;
+			-webkit-box-shadow: none;
+			width: 259px;
+			height: 80px;
+			text-align: left;
+			display: block;
+			margin-bottom: 16px;
+			margin-top: 0;
+
+			&:last-child {
+				margin: 0;
+			}
+
+			span.icon {
+				float: right;
+				font-size: 25px;
+				position: relative;
+				top: 12px;
+			}
+
+			span.word {
+				top: 12px;
+				position: relative;
+				font-size: 28px;
+			}
+
+			a {
+				display: block;
+				height: 100%;
+				width: 100%;
+			}
+
+			&.open {
+				span.icon:before {
+					content: "\e601";
+				}
+			}
+		}
+
+		& > div.rsu.rsu-btn.rsu-income-protection,
+		& > h3.rsu.rsu-btn.rsu-income-protection {
+			margin: 0;
+		}
+
+		.pContainer { 
+			overflow: hidden;
+			width: 259px;
+			padding-left: 16px;
+			height: 140px;
+
+			&:last-child {
+				height: 127px;
+
+				p, li:first-child {
+					top: 0;
+					margin-top: 16px;
+				}
+				li { margin: 0; }
+			}
+
+			p, li {
+				line-height: 18px;
+				margin-top: 0;
+				position: relative;
+			}
+		}
+
+		/* main buttons */
+		& > div.pContainer,
+		& > div.rsu,
+		& > h3.rsu {
+			font-size: 14px;
+			display: block;
+
+			a {
+				color: #fff;
+
+				span.rsu-icon {
+					height: 46px;
+					width: 46px;
+					background: #fff;
+					border-radius: 50%;
+					-webkit-border-radius: 50%;
+					display: inline-block;
+					float: left;
+					margin-right: 9px;
+				}
+			}
+
+			ul {
+				padding-left: 16px;
+				margin: 0;
+
+				li {
+					font-weight: bold;
+					list-style-type: disc;
+
+					&:last-child {
+						/*margin-bottom: 27px;*/
+					}
+				}
+			}
+
+			&.rsu-money {
+				background: #80bf00;
+
+				span.rsu-icon {
+					background: url(../img/money.png) #fff no-repeat;
+					background-size: 55%;
+					background-position: center;
+				}
+			}
+
+			&.rsu-benefits {
+				background: #ff9700;
+
+				span.rsu-icon {
+					background: url(../img/benefits.png) #fff no-repeat;
+					background-size: 60%;
+					background-position: center;
+				}
+			}
+
+			&.rsu-retirement {
+				background: #006fff;
+
+				span.rsu-icon {
+					background: url(../img/retirement.png) #fff no-repeat;
+					background-size: 60%;
+					background-position: center;
+				}
+			}
+
+			&.rsu-income-protection {
+				padding: 10px 16px;
+				background: #b248e8;
+
+				a {
+					top: 0;
+				}
+
+				span.rsu-icon {
+					position: relative;
+					top: 7px;
+
+					background: url(../img/protection.png) #fff no-repeat;
+					background-size: 45%;
+					background-position: center;
+				}
+
+				span.word {
+					top: 2px;
+				}
+
+				span.icon {
+					top: -10px;
+				}					
+			}
+
+			&.rsu-equity {
+				background: #db5e01;
+
+				span.rsu-icon {
+					background: url(../img/equity.png) #fff no-repeat;
+					background-size: 60%;
+					background-position: center;
+				}
+			}
+		}
+	}
+
+	a.seeRewardsStatement {
+		color: #fff !important;
+		/*height: 124px;*/
+		width: 352px;
+		background: #00a8e7;
+		display: block;
+		border-radius: 12px;
+		-webkit-border-radius: 12px;
+		padding: 16px 18px;
+
+		h3 {
+			font-size: 26px;
+			margin: 0;
+			font-weight: 500;
+			float: left;
+			width: 240px;
+		}
+
+		p {
+			font-size: 14px;
+			float: left;
+			width: 240px;
+			line-height: 18px;
+		}
+
+		span.icon {
+			float: right;
+			font-size: 25px;
+		}
+	}
+}
+
+@media screen and (min-width: 0px) {
+	.kroger-rsu-modal {
+		width: 100%;
+		display: block;
+		float: left;
+		padding: 10px;
+
+		a.rsu-modal-close {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			color: #fff;
+			border-radius: 50%;
+			-webkit-border-radius: 50%;
+			background: rgba(0,0,0,.5);
+			padding: 10px;
+			height: 36px;
+			width: 36px;
+		}
+
+		h1 {
+			font-size: 45px;
+			margin: 0 0 15px;
+		}
+
+		.subtext {
+			h2 {
+				font-size: 18px;
+				margin: 0;
+				line-height: 25px;
+			}
+
+			p {
+				font-size: 15px;
+				line-height: 23px;
+				margin-top: 12px;
+			}
+		}
+
+		.rsu-container {
+			padding: 20px 0;
+
+			a.seeRewardsStatement {
+				h3,
+				p {
+					max-width: 200px;
+				}
+
+				p {
+					margin: 7px 0 0;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 320px) {
+		.kroger-rsu-modal {
+			div.rewards-list {
+				margin: 0 auto;
+				width: 259px;
+			}
+
+			a.seeRewardsStatement {
+				margin: 0 auto;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		.kroger-rsu-modal {
+			img {
+				display: none;
+			}
+
+			div.rewards-list {
+				margin: 0 auto;
+				width: 259px;
+				margin-top: 16px;
+			}
+
+			a.seeRewardsStatement {
+				margin: 0 auto;
+			}
+		}
+	}
+
+	@media screen and (min-width: 336px) {
+		.kroger-rsu-modal {
+			padding: 20px;
+
+			.rsu-container {
+				padding: 20px 0;
+			}
+		}
+	}
+
+	@media screen and (max-width: 433px) {
+		.mainImg {
+			padding: 30px 30px 16px 30px;
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		.kroger-rsu-modal {
+			div.rewards-list {
+				margin: 0 auto;
+				width: 259px;
+			}
+
+			a.seeRewardsStatement {
+				width: 259px;
+				margin: 0 auto;
+				margin-top: 16px;
+
+				h3, p {
+					width: 170px;
+					clear: left;
+				}
+
+				span.icon {
+					position: relative;
+					top: -28px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.kroger-rsu-modal {
+		h1 {
+			width: auto;
+		}
+	}
+}
+
+@media screen and (min-width: 461px) and (max-width: 653px) {
+	.kroger-rsu-modal {
+		h1 {
+			width: 400px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.kroger-rsu-modal {
+		.rsu-container {
+			padding: 43px;
+
+			.mainImg {
+				float: right;
+				margin-top: 36px;
+				margin-bottom: 0px;
+			}
+
+			.rewards-list {
+				float: left;
+				width: 259px;
+
+				.rsu {
+					width: 259px;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			a.seeRewardsStatement {
+				float: right;
+				height: 124px;
+				margin-top: 59px;
+				width: 352px;
+
+				h3, p {
+					max-width: 240px;
+				}
+
+				span.icon {
+					position: relative;
+					top: -17px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.kroger-rsu-modal {
+		width: 900px;
+		height: auto;
+		margin: 0 auto;
+
+		h1 {
+			width: 400px;
+			display: inline-block;
+			position: relative;
+			top: -38px;
+		}
+
+		div.subtext {
+			width: 390px;
+			margin-left: 60px;
+			display: inline-block;
+		}
+	}
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
