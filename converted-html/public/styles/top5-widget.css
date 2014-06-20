@@ -244,6 +244,12 @@ ol {
   color: #00a5ea;
   font-weight: bold; }
 
+#top5-list section {
+  float: none !important; }
+
+span.word {
+  font-weight: bold; }
+
 @media screen and (min-width: 0px) {
   div.kroger-top5-widget {
     padding: 0;
@@ -254,6 +260,9 @@ ol {
 
   #top5-list {
     margin: 0; }
+
+  .intro-text p {
+    padding-left: 22px; }
 
   .icon-arrow-down {
     /*display: none;*/ }
@@ -301,7 +310,9 @@ ol {
     margin-right: 13px; }
 
   span.word {
-    font-size: 28px; }
+    font-size: 28px;
+    position: relative;
+    top: 10px; }
 
   ol li {
     margin-left: 20px; } }
