@@ -133,6 +133,9 @@ ul > li {
 #top5-list > li {
   list-style-type: none; }
 
+p, li {
+  line-height: 130%; }
+
 p span {
   font-weight: bold; }
 
@@ -281,13 +284,17 @@ ol {
     width: 100%;
     padding: 20px;
     font-size: 28px;
-    /*height: 106px;*/ }
+    /*height: 106px;*/
+    /*position: relative;*/ }
 
   .top5-why ol ul li {
     margin-left: 16px; }
   .top5-why ol > li,
   .top5-why h2 {
     margin-bottom: 14px; }
+
+  .top5-where > section > ul li {
+    margin-bottom: 2px; }
 
   .icon-container {
     display: inline-block;
@@ -357,9 +364,8 @@ ol {
     padding: 33px 43px;
     background: #F3F3F3;
     border-radius: 12px;
-    /*height: auto !important;*/
     height: 508px; }
-    .pContainer h3 {
+    .pContainer * {
       font-size: 18px; }
 
   li.top5 > a {
