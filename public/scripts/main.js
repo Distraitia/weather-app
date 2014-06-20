@@ -1,15 +1,20 @@
 $(document).ready(function() {
 
+	$('#top5-list').children('li').first().children('a').addClass('active').next().addClass('is-open').show();
+    
+	$('#top5-list').on('click', 'li > a', function() {
+    
+	  	if (!$(this).hasClass('active')) {
 
-	$("#rewards-list").collapse({
-  	accordion: true,
-  	open: function() {       			
-    	this.slideDown(350);
-  	},
-  	close: function() {
-    	this.slideUp(350);
-  	}
-  });
-
+		    $('#top5-list .is-open').removeClass('is-open').hide();
+		    $(this).next().toggleClass('is-open').toggle();
+		      
+		    $('#top5-list').find('.active').removeClass('active');
+		    $(this).addClass('active');
+	  	} else {
+	    	// $('#top5-list .is-open').removeClass('is-open').hide();
+	    	// $(this).removeClass('active');
+	  	}
+	});
 
 });

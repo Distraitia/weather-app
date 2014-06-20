@@ -1,74 +1,73 @@
-html, body {
-  height: 100%; }
+html, body { 
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+$color1: #80BE00;
+$color1dark: #6ca300;
+$color2: #FF9A00;
+$color2dark: #ff8100;
+$color3: #0064FF;
+$color3dark: #0059ff;
+$color4: #B734EE;
+$color4dark: #9c36d7;
+$color5: #E05F00;
+$color5dark: #c65000;
+$blue: #00A5EA;
 
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-html,
-body {
-  font-size: 100%; }
-
-body {
-  background: white;
-  color: #222222;
-  padding: 0;
-  margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 1;
-  position: relative;
-  cursor: default; }
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
 
 a:hover {
-  cursor: pointer; }
+    cursor: pointer; 
+}
 
 img {
-  max-width: 100%;
-  height: auto; }
-
-img {
-  -ms-interpolation-mode: bicubic; }
-
-
-.left {
-  float: left !important; }
-
-.right {
-  float: right !important; }
+    max-width: 100%;
+    height: auto; 
+    -ms-interpolation-mode: bicubic;
+}
 
 .clearfix {
-  *zoom: 1; }
-  .clearfix:before, .clearfix:after {
+    *zoom: 1; 
+}
+.clearfix:before, .clearfix:after {
     content: " ";
-    display: table; }
-  .clearfix:after {
-    clear: both; }
+    display: table; 
+}
+.clearfix:after {
+    clear: both; 
+}
 
 .hide {
-  display: none; }
+    display: none; 
+}
 
 .antialiased {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+}
 
 img {
-  display: inline-block;
-  vertical-align: middle; }
-  
-@font-face {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+/*@font-face {
 	font-family: 'Kroger-Modal';
 	src:url('../fonts/Kroger-Modal.eot?-qbzoub');
 	src:url('../fonts/Kroger-Modal.eot?#iefix-qbzoub') format('embedded-opentype'),
-		url('../fonts/Kroger-Modal.woff?-qbzoub') format('woff'),
-		url('../fonts/Kroger-Modal.ttf?-qbzoub') format('truetype'),
-		url('../fonts/Kroger-Modal.svg?-qbzoub#Kroger-Modal') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    url('../fonts/Kroger-Modal.woff?-qbzoub') format('woff'),
+    url('../fonts/Kroger-Modal.ttf?-qbzoub') format('truetype'),
+    url('../fonts/Kroger-Modal.svg?-qbzoub#Kroger-Modal') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .icon {
@@ -78,10 +77,10 @@ img {
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
-	line-height: 1;
+	line-height: 1;*/
 
 	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
+	/*-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
@@ -96,4 +95,48 @@ img {
 }
 .icon-arrow-right:before {
 	content: "\e602";
+}*/
+
+@font-face {
+    font-family: 'Kroger-Widget';
+    src:url('../fonts/Kroger-Widget.eot?-exo6gw');
+    src:url('../fonts/Kroger-Widget.eot?#iefix-exo6gw') format('embedded-opentype'),
+        url('../fonts/Kroger-Widget.woff?-exo6gw') format('woff'),
+        url('../fonts/Kroger-Widget.ttf?-exo6gw') format('truetype'),
+        url('../fonts/Kroger-Widget.svg?-exo6gw#Kroger-Widget') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'Kroger-Widget' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-questionMark:before {
+    content: "\e600";
+}
+.icon-clock:before {
+    content: "\e601";
+}
+.icon-dollar:before {
+    content: "\e602";
+}
+.icon-target:before {
+    content: "\e603";
+}
+.icon-pin:before {
+    content: "\e604";
+}
+.icon-arrow-down:before {
+    content: "\e605";
 }

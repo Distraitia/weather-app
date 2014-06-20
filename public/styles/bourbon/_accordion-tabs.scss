@@ -1,0 +1,111 @@
+#top5-list {
+    margin: 24px auto;
+    width: 100%;
+    position: relative;
+    top: 100px;
+}
+
+ul#top5-list {
+    padding: 0;
+}
+
+#top5-list ul li {
+    /*list-style: none; */
+}
+#top5-list ol li {
+    display: list-item;
+
+    span {
+        font-weight: bold;
+    }
+}
+
+#top5-list li a {
+    display: block;
+    /*padding: 16px;*/
+    text-decoration: none;
+    /*position: absolute;*/
+    top: -120px;
+}
+
+/*li.top5-why a {
+    left: 0;
+}
+li.top5-when a {
+    left: 132px;
+}
+li.top5-real-money a {
+    left: 263px;
+}
+li.top5-targets a {
+    left: 394px;
+}
+li.top5-where a {
+    left: 525px;
+}*/
+
+#top5-list section {
+    display: none; /* I NEED TO FIX THIS */
+    float: left;
+    overflow: hidden; 
+}
+
+.no-js #top5-list section {
+    display: block; /* I NEED TO FIX THIS */
+}
+
+#top5-list li ul li a {
+    padding: 10px 25px;
+}
+
+@media screen and (max-width: 744px) {
+    #top5-list li a {
+        padding: 16px 24px;
+    }
+}
+
+@media screen and (min-width: 745px) {
+    .kroger-top5-widget {
+        border: 1px solid #ccc;
+    }
+
+    #top5-list { 
+        /*position: relative; */
+        width: 657px;
+    }
+    #top5-list li { 
+        /*display: inline; */
+    }
+    #top5-list li a { 
+        display: inline-block; 
+    }  
+    #top5-list section { 
+        position: absolute; 
+        top: 42px; 
+        left: 0;  
+    }  
+
+    #top5-list li a {
+        display: block;
+        padding: 16px;
+        text-decoration: none;
+        position: absolute;
+        top: -120px;
+    }
+
+    li.top5-why a {
+        left: 0;
+    }
+    li.top5-when a {
+        left: 132px;
+    }
+    li.top5-real-money a {
+        left: 263px;
+    }
+    li.top5-targets a {
+        left: 394px;
+    }
+    li.top5-where a {
+        left: 525px;
+    }
+}

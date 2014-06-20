@@ -5,101 +5,124 @@
         <title>How Your Rewards Stack Up</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        <link href="public/styles/kroger-modal.min.css" rel="stylesheet" type="text/css" media="all"/>        
-        <script src="public/scripts/libs/jquery-1.9.1.min.js"></script> 
+        <link href="/public/styles/top5-widget.min.css" rel="stylesheet" type="text/css" media="all"/>        
+        <script src="/public/scripts/libs/jquery-1.9.1.min.js"></script> 
         <!--[if lt IE 9]>
-          <script src="public/scripts/ie.min.js"></script>
+          <script src="/public/scripts/ie.min.js"></script>
         <![endif]-->
-        <script src="public/scripts/libs/modernizr.min.js"></script>
+        <script src="/public/scripts/libs/modernizr.min.js"></script>
 
     </head>
-    <body class="wrapper rsu">
+    <body class="wrapper top5">
         
 
-	<div class="kroger-rsu-modal">
-		<!--
-		<a class="rsu-modal-close close-reveal-modal" href="#"><span class="icon icon-close"></span></a>
-		-->
-		
-		<h1>How Your Rewards Stack Up</h1>
-		<div class="subtext">
-			<h2>Your rewards are more than a paycheck.</h2>
-			<p>In fact, base pay makes up only xx% of total rewards for the average Kroger associate.  Your new online statement includes the value of all your rewards - pay, benefits, retirement savings, equity and income protection &mdash; and it's updated every month!</p>
-		</div>
-		<div class="rsu-container clearfix">
-			<img class="mainImg" src="public/img/coins.png" alt="coins" />
-			
-			<div class="rewards-list" id="rewards-list">
-				<h3 class="rsu rsu-btn rsu-money hidden">
-					<span class="rsu-icon"></span> <span class="word">Money</span><span class="icon icon-arrow-down"></span>
-				</h3>
-				<div class="pContainer">
-					<p>Your rewards start with your paycheck, but they don't end there.</p>				
-					<ul>
-						<li>Base pay</li>
-						<li>Any bonus</li>
-						<li>Kroger contributions to benefits</li>
-					</ul>
-				</div>
-				
-				<h3 class="rsu rsu-btn rsu-benefits hidden">
-					<span class="rsu-icon"></span> <span class="word">Benefits</span><span class="icon icon-arrow-down"></span>
-				</h3>
-				<div class="pContainer">
-					<p>Kroger benefits help you get healthy and stay healthy - and help you save at the same time.</p>
-					<ul>
-						<li>Health coverage</li>
-						<li>Flexible spending accounts</li>
-						<li>Health improvement &amp; more</li>
-					</ul>
-				</div>
-
-				<h3 class="rsu rsu-btn rsu-retirement hidden">
-					<span class="rsu-icon"></span> <span class="word">Retirement</span><span class="icon icon-arrow-down"></span>
-				</h3>
-				<div class="pContainer">
-					<p>Save and invest for your future today with company contributions from Kroger.</p>
-					<ul>						
-						<li>401(k) Retirement Savings Plan</li>
-						<li>Cash Balance (Pension) Plan if eligible</li>
-					</ul>
-				</div>
-
-				<h3 class="rsu rsu-btn rsu-equity hidden">
-					<span class="rsu-icon"></span> <span class="word">Equity</span><span class="icon icon-arrow-down"></span>
-				</h3>
-				<div class="pContainer">
-					<p>Owning Kroger stock allows you to share in the success you help create.</p>
-					<ul>
-						<li>Kroger Stock Exchange <br>(Stock Purchase Plan)</li>
-					</ul>
-				</div>
-				
-				<h3 class="rsu rsu-btn rsu-income-protection hidden">
-					<span class="rsu-icon"></span> <span class="word">Income Protection</span><span class="icon icon-arrow-down"></span>
-				</h3>
-				<div class="pContainer">
-					<p>You're covered if the unexpected happens.</p>
-					<ul>
-						<li>Life and accident insurance</li>
-						<li>Long-term disability</li>
-					</ul>
-				</div>				
-			</div>
-
-			<a class="seeRewardsStatement clearfix">
-				<h3>See Your Total Rewards Statement</h3>
-				<p>View it. Print it. Come back to see what changed.</p>
-				<span class="icon icon-arrow-right"></span>
-			</a>
-
-		</div>
+<div class="kroger-top5-widget clearfix">
+	<div class="intro-text">
+		<h1 class="mobile">Top 5 Things You Need To Know About Health Screenings</h1>
+		<h1 class="desktop">Top 5 Things You Need To
+			<br>Know About Health Screenings</h1>
+		<p>Click each item for details on this year's screening rules!</p>
 	</div>
+	<ul class="top5-list" id="top5-list">
+		<li class="top5 top5-btn top5-why">
+			<a href="#"><div class="icon-container"><span class="top5-icon icon icon-questionMark"></span></div><span class="word">Why?</span><span class="icon icon-arrow-down"></span>
+			</a>
+			<section class="pContainer block1">
+				<h2>Two important reasons to get a screening:</h2>				
+				<ol>
+					<li><span>Choose the plan you want.</span> You must get a screening by September 30, 2014 to have your choice of 2015 health plans if you did not meet all 4 targets during a health screening in 2013.  Otherwise, your choice will be limted to the HSA PPO Plan 2.</li>
+					<li>
+						<span>Earn real money for each target you meet.</span>
+						<ul>
+							<li>When you don't need a screening</li>
+							<li>What you earn for meeting targets</li>
+						</ul>
+					</li>
+				</ol>
+			</section>
+		</li>
+		
+		<li class="top5 top5-btn top5-when ">
+			<a href="#">
+				<div class="icon-container"><span class="top5-icon icon icon-clock"></span></div><span class="word">When?</span><span class="icon icon-arrow-down"></span>
+			</a>
+			<section class="pContainer block2">
+				<h2>When you don’t need a screening:</h2>
+				<p>If you met all four targets in 2013, you don't have to get a screening in 2014 to have a plan choice or get the full incentive for 2015.  You're already done!</p>
+				<p><span>Note:</span> If you used the Reasonable Alternative Standard (RAS) option or submitted a Reasonable Accommodation (RA) form to meet all four targets in 2013, you still have to complete a screening in 2014 by September 30.</p>
+			</section>
+		</li>
+
+		<li class="top5 top5-btn top5-real-money ">
+			<a href="#">
+				<div class="icon-container"><span class="top5-icon icon icon-dollar"></span></div> <span class="word">Real Money</span><span class="icon icon-arrow-down"></span>
+			</a>
+			<section class="pContainer block3">
+				<h2>Real money for meeting screening targets</h2>
+				<p>You earn $100 for each screening target you meet – up to $400 dollars if you are enrolled in an Anthem medical plan in 2015. If your spouse/domestic partner meets the targets too, you get double the money. Remember, you also get $50 for each target you improve from 2013. Go to the Health page when you’ve completed your screening to see incentives you’ve earned.</p>
+			</section>
+		</li>
+
+		<li class="top5 top5-btn top5-targets ">
+			<a href="#">
+				<div class="icon-container"><span class="top5-icon icon icon-target"></span></div> <span class="word">Targets</span><span class="icon icon-arrow-down"></span>
+			</a>
+			<section class="pContainer block4">
+				<h2>Screening targets will be the same</h2>
+				<p>Our targets aren’t changing for 2014, and you can go to the Health page to see your past screening results. Any screenings you receive between January 1, 2014 and September 30, 2014 will count for your 2015 plan choice and incentive funding.</p>
+			</section>
+		</li>
+		
+		<li class="top5 top5-btn top5-where ">
+			<a href="#">
+				<div class="icon-container"><span class="top5-icon icon icon-pin"></span></div> <span class="word">Where</span><span class="icon icon-arrow-down"></span>
+			</a>
+			<section class="pContainer block5">
+				<h2>Four ways to get screened:</h2>
+				<ol>
+					<li><span>Your doctor's office</span> – download the new 2014-2015 PCP form and take to your screening appointment with your medical ID card.  You must return the form by 9/30/14.</li>
+					<li><span>A Kroger Co. Pharmacy</span> – call 1-877-444-9689 or go to krogerscreenings.com for an appointment.</li>
+					<li><span>The Little Clinic</span> – go to thelittleclinic.com for locations – no appointment necessary.</li>
+					<li><span>Company-sponsored screening event</span> – see postng at your worksite location.</li>
+				</ol>
+				<h3>Tips for screening:</h3>
+				<ul>
+					<li>Schedule the first screening appointment of the day.</li>
+					<li>Fast 12 hours prior to the screening (water and medications are ok).</li>
+					<li>Take your state or federal issued identification and your medical ID card (if applicable).</li>
+				</ul>
+			</section>
+		</li>				
+	</ul>
+	<!-- <h2>Responsive Accordian to Tabs</h2>
+	<ul id="nav">
+	  <li><a href="#">Item 1</a>
+	    <section>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.</p>
+	    </section>
+	  </li>
+	  <li><a href="#">Item 2</a>
+	    <section>
+	      <p>Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum lacus quis metus condimentum ac accumsan orci vulputate. Aenean fringilla massa vitae metus facilisis congue. Morbi placerat eros ac sapien semper pulvinar. Vestibulum facilisis, ligula a molestie venenatis, metus justo ullamcorper ipsum, congue aliquet dolor tortor eu neque. Sed imperdiet, nibh ut vestibulum tempor, nibh dui volutpat lacus, vel gravida magna justo sit amet quam. Quisque tincidunt ligula at nisl imperdiet sagittis. Morbi rutrum tempor arcu, non ultrices sem semper a. Aliquam quis sem mi.</p>
+	     </section>
+	  </li>
+	  <li><a href="#">Item 3</a>
+	    <section>
+	      <p>Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.</p>    
+	    </section>
+	  </li>
+	  <li><a href="#">Item 4</a>
+	    <section>
+	         <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna, mollis vel suscipit in, pharetra at ligula. Pellentesque a est vel est fermentum pellentesque sed sit amet dolor. Nunc in dapibus nibh. Aliquam erat volutpat. Phasellus vel dui sed nibh iaculis convallis id sit amet urna. Proin nec tellus quis justo consequat accumsan. Vivamus turpis enim, auctor eget placerat eget, aliquam ut sapien.</p>
+	    </section>
+	  </li>
+	</ul> -->
+</div>
 
                
-        <script src="public/scripts/libs/jquery.collapse.min.js"></script>        
-        <script src="public/scripts/libs/jquery.corner.min.js"></script>
-        <script src="public/scripts/main.min.js"></script>
+        <script src="/public/scripts/libs/jquery.collapse.min.js"></script>        
+        <script src="/public/scripts/libs/jquery.corner.min.js"></script>
+        <script src="/public/scripts/main.min.js"></script>
     </body>
 </html>
 
