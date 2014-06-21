@@ -12,8 +12,8 @@ $(document).ready(function() {
 		    $('#top5-list').find('.active').removeClass('active');
 		    $(this).addClass('active');
 	  	} else {
-	    	// $('#top5-list .is-open').removeClass('is-open').hide();
-	    	// $(this).removeClass('active');
+	    	$('#top5-list .is-open').removeClass('is-open').hide();
+	    	$(this).removeClass('active');
 	  	}
 	});
 
