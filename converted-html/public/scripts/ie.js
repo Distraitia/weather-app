@@ -11,8 +11,9 @@ $(document).ready(function() {
 
     $("#top5-list > li.top5 > a > div.icon-container").corner("36px");
     $("#top5-list > li.top5 > section.pContainer").corner("12px");
-    // $(".kroger-rsu-modal h3.rsu-btn span.rsu-icon").corner("24px");
-    // $(".kroger-rsu-modal .rsu-container").corner("12px");
-    // $(".kroger-rsu-modal .rsu-container a.seeRewardsStatement").corner("12px");
 
+    $("#top5-list > li.top5 > a").click(function(e) {
+        e.preventDefault();
+    });
+ 
  });
