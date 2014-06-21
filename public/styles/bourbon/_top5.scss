@@ -2,6 +2,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+	background: #ddd;
 }
 
 h1, h2, h3 {
@@ -10,6 +11,14 @@ h1, h2, h3 {
 
 h1 {
 	line-height: 100%;
+}
+
+div.kroger-top5-widget {
+	margin: 0 auto;
+	float: none;
+	display: block;
+	padding: 0;
+	background: #fff;
 }
 
 .intro-text p {
@@ -235,13 +244,6 @@ ol {
 
 span.word {
 	font-weight: bold;
-}
-
-@media screen and (min-width: 0px) {
-	div.kroger-top5-widget {
-		padding: 0;
-		margin: 0;
-	}
 }
 
 @media screen and (max-width: 744px) {
