@@ -23,8 +23,20 @@ ul > li {
 	list-style-type: disc;
 }
 
-#top5-list > li {
+#top5-list > li.top5 {
 	list-style-type: none;
+	position: relative;
+
+	& > section.pContainer {
+		& > h2,
+		p {
+			margin-top: 0;
+			margin-bottom: 29px;
+		}
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 
 p, li {
@@ -46,7 +58,8 @@ li.top5 > a {
 		position: absolute;
 		width: 100%;
 		text-align: center;
-		bottom: -18px;
+		/*bottom: -18px;*/
+		/*top: 81px;*/
 		font-size: 44px;
 		left: 0;
 
@@ -138,7 +151,7 @@ li.top5-targets {
 		color: $color4;
 	}
 }
-li.top5-where {
+#top5-list > li.top5-where {
 	& > a {
 		background: $color5;
 
@@ -155,6 +168,10 @@ li.top5-where {
 	& > a .top5-icon,
 	& > a .icon-arrow-down {
 		color: $color5;
+	}
+
+	& > section.pContainer > h2 {
+		margin-bottom: 20px;
 	}
 
 	ul {
@@ -189,7 +206,7 @@ ol {
 
 	& > li {
 		/*list-style-type: decimal;*/
-		/*margin-bottom: 29px;*/
+		margin-bottom: 29px;
 		line-height: 130%;
 	}
 }
@@ -197,7 +214,7 @@ ol {
 .top5-why {
 	ol > li,
 	h2 {
-		/*margin-bottom: 29px;*/
+		margin-bottom: 29px;
 	}
 }
 .top5-where {
@@ -234,14 +251,31 @@ span.word {
 
 	#top5-list {
 		margin: 0;
+
+		& > li.top5 > section.pContainer {
+			& > h2,
+			p {
+				margin-bottom: 17px;
+			}
+		}
+	}
+
+	li.top5 > a {
+		.icon-arrow-down {
+			top: 81px;
+		}
 	}
 
 	.intro-text p {
 		padding-left: 22px;
+		padding-right: 22px;
 	}
 
 	.icon-arrow-down {
-		/*display: none;*/
+		display: none;
+	}
+	#top5-list > li.top5 > a.active > span.icon-arrow-down {
+		display: block;
 	}
 
 	.icon-container {
@@ -266,7 +300,7 @@ span.word {
 	}
 
 	.pContainer {
-		padding: 20px;
+		padding: 27px 20px 19px;
 		background: #fff;
 
 		* {
@@ -290,6 +324,10 @@ span.word {
 		h2 {
 			margin-bottom: 14px;
 		}
+	}
+
+	#top5-list > li.top5-real-money > a {
+		padding-right: 0;
 	}
 
 	.top5-where {
@@ -352,6 +390,18 @@ span.word {
 		}
 	}
 
+	li.top5 > a {
+		.icon-arrow-down {
+			bottom: -18px;
+		}
+	}
+
+	#top5-list > .top5-real-money {
+		& > a {
+			padding: 16px 0;
+		}
+	}
+
 	.top5-where {
 		& > .pContainer {
 			/*font-size: 16px;*/
@@ -394,7 +444,7 @@ span.word {
 	}
 
 	.pContainer {
-		padding: 33px 43px;
+		padding: 33px 38px;
 		background: #F3F3F3;
 		border-radius: 12px;
 		height: 508px;

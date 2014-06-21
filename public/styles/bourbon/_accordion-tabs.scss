@@ -1,5 +1,5 @@
 #top5-list {
-    margin: 24px auto;
+    margin: 24px auto 0;
     width: 100%;
     position: relative;
     top: 100px;
@@ -28,22 +28,6 @@ ul#top5-list {
     top: -120px;
 }
 
-/*li.top5-why a {
-    left: 0;
-}
-li.top5-when a {
-    left: 132px;
-}
-li.top5-real-money a {
-    left: 263px;
-}
-li.top5-targets a {
-    left: 394px;
-}
-li.top5-where a {
-    left: 525px;
-}*/
-
 #top5-list section {
     display: none; /* I NEED TO FIX THIS */
     float: left;
@@ -59,8 +43,30 @@ li.top5-where a {
 }
 
 @media screen and (max-width: 744px) {
+
+/* This is added to remove the spacing that desktop layout needs up top */
+    #top5-list {
+        top:0;
+    }
+
+/* for mobile, the accordion needs these anchors to be relative, removing the negative top margin is also needed */
     #top5-list li a {
         padding: 16px 24px;
+        position:relative;
+        top:auto;
+    }
+
+/* in mobile, hide the arrow by default */
+    #top5-list li a .icon-arrow-down {
+        display:none;
+    }
+/* if the block is active, show the arrow */
+    #top5-list li a.active .icon-arrow-down {
+        display:block;
+    }
+/* add some spacing because the above changes pushed the content kinda close to the arrow */
+    #top5-list section {
+        /*margin-top:20px;*/
     }
 }
 
