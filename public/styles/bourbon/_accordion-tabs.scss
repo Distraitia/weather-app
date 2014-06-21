@@ -59,8 +59,22 @@ li.top5-where a {
 }
 
 @media screen and (max-width: 744px) {
+    #top5-list {
+        top:0;
+    }
     #top5-list li a {
         padding: 16px 24px;
+        position:relative;
+        top:auto;
+    }
+    #top5-list li a .icon-arrow-down {
+        display:none;
+    }
+    #top5-list li a.active .icon-arrow-down {
+        display:block;
+    }
+    #top5-list section {
+        margin-top:20px;
     }
 }
 
