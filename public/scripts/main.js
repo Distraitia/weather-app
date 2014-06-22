@@ -2,7 +2,8 @@ $(document).ready(function() {
 
 	$('#top5-list').children('li').first().children('a').addClass('active').next().addClass('is-open').show();
     
-	$('#top5-list').on('click', 'li > a', function() {
+	$('#top5-list').on('click', 'li > a', function(e) {
+		e.preventDefault();
     
 	  	if (!$(this).hasClass('active')) {
 
