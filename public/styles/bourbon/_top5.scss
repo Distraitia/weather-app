@@ -208,7 +208,7 @@ li.top5-targets {
 		padding: 0;
 
 		li {
-			margin-left: 18px;
+			margin-left: 20px;
 		}
 	}
 }
@@ -260,7 +260,7 @@ ol {
 	}
 
 	.pContainer > ul li {
-		font-weight: bold;
+		font-weight: normal;
 	}
 }
 
@@ -440,8 +440,6 @@ span.word {
 
 				li {
 					list-style-type: disc;
-					/*color: $blue;*/
-					font-weight: bold;
 					margin-left: 20px;
 					line-height: 130%;
 				}
@@ -564,8 +562,6 @@ span.word {
 
 				li {
 					list-style-type: disc;
-					/*color: $blue;*/
-					font-weight: bold;
 					margin-left: 20px;
 					line-height: 130%;
 				}

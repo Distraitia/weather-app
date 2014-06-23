@@ -250,7 +250,7 @@ li.top5-targets > a .top5-icon, li.top5-targets > a .icon-arrow-down {
 #top5-list > li.top5-where ul {
   padding: 0; }
   #top5-list > li.top5-where ul li {
-    margin-left: 18px; }
+    margin-left: 20px; }
 
 li.top5 > a > .icon-container {
   background: #fff;
@@ -286,7 +286,7 @@ ol {
     color: #00a5ea;
     text-decoration: none; }
 .top5-where .pContainer > ul li {
-  font-weight: bold; }
+  font-weight: normal; }
 
 #top5-list section {
   float: none !important; }
@@ -411,8 +411,6 @@ span.word {
       padding: 0; }
       .top5-where > .pContainer > ul li {
         list-style-type: disc;
-        /*color: $blue;*/
-        font-weight: bold;
         margin-left: 20px;
         line-height: 130%; }
   .top5-where h3 {
@@ -495,8 +493,6 @@ span.word {
       padding: 0; }
       .top5-where > .pContainer > ul li {
         list-style-type: disc;
-        /*color: $blue;*/
-        font-weight: bold;
         margin-left: 20px;
         line-height: 130%; }
   .top5-where h3 {
@@ -718,7 +714,7 @@ ul#top5-list {
       .no-canvas.no-canvastext.no-geolocation.no-rgba .top5-where > .pContainer > ul li {
         list-style-type: disc;
         color: #00a5ea;
-        font-weight: bold;
+        /*font-weight: bold;*/
         margin-left: 20px;
         line-height: 130%; }
   .no-canvas.no-canvastext.no-geolocation.no-rgba .top5-where h3 {
