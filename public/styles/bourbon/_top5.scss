@@ -19,6 +19,27 @@ div.kroger-top5-widget {
 	display: block;
 	padding: 0;
 	background: #fff;
+	position: relative;
+}
+
+.closeBtn {
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	height: 30px;
+	width: 30px;
+	background: #000;
+	color: #fff;
+	border-radius: 50%;
+
+	span.icon {
+		width: 100%;
+		text-align: center;
+		position: relative;
+		top: 8px;
+		display: inline-block;
+		font-size: 15px;
+	}
 }
 
 .intro-text p {
@@ -211,6 +232,7 @@ ol {
 		color: $blue;
 		font-weight: bold;
 		list-style-type: disc;
+		cursor: pointer;
 	}
 
 	& > li {
@@ -230,10 +252,14 @@ ol {
 	ol > li,
 	h2 {
 		margin-bottom: 15px;
+		a {
+			display: inline;
+			color: $blue;
+			text-decoration: none;
+		}
 	}
 
 	.pContainer > ul li {
-		color: $blue;
 		font-weight: bold;
 	}
 }
@@ -246,7 +272,7 @@ span.word {
 	font-weight: bold;
 }
 
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 599px) {
 	div.kroger-top5-widget {
 		width: 100%;
 	}
@@ -289,10 +315,10 @@ span.word {
 		padding: 18px 22px 0;
 
 		&.mobile {
-			display: block;
+			/*display: block;*/
 		}
 		&.desktop {
-			display: none;
+			/*display: none;*/
 		}
 	}
 	.intro-text p,
@@ -354,21 +380,147 @@ span.word {
 	}
 }
 
-@media screen and (min-width: 745px) {
+@media screen and (min-width: 600px) and (max-width: 744px) {
 	div.kroger-top5-widget {
-		width: 744px;
+		/*width: 744px;*/
 		padding: 28px 40px 40px;
-		height: 924px;
+		height: 958px;
 	}
 	h1 {
 		font-size: 44px;
 		/*line-height: 100%;*/
 
 		&.mobile {
-			display: none;
+			/*display: none;*/
 		}
 		&.desktop {
-			display: block;
+			/*display: block;*/
+		}
+	}
+	
+	h2,
+	ol li {
+		font-size: 18px;
+
+		ul li {
+			margin-left: 20px;
+		}
+	}
+
+	ol > li {
+		margin-left: 24px;
+	}
+
+	.top5-why {
+		ol > li,
+		h2 {
+			margin-bottom: 29px;
+		}
+	}
+
+	li.top5 > a {
+		display: inline-block;
+
+		.icon-arrow-down {
+			bottom: -18px;
+		}
+	}
+
+	#top5-list > .top5-real-money {
+		& > a {
+			padding: 16px 0;
+		}
+	}
+
+	.top5-where {
+		& > .pContainer {
+			/*font-size: 16px;*/
+			& > ul {
+				padding: 0;
+
+				li {
+					list-style-type: disc;
+					/*color: $blue;*/
+					font-weight: bold;
+					margin-left: 20px;
+					line-height: 130%;
+				}
+			}
+		}
+
+		h3 {
+			margin-bottom: 5px;
+		}
+
+		li a {
+			color: $blue;
+		}
+	}
+
+	.intro-text p {
+		font-size: 18px;
+	}
+
+	.top5 > a {
+		.icon-arrow-down {
+			display: none;
+		}
+		&.active .icon-arrow-down {
+			display: inline;
+		}
+	}
+
+	.icon-container {
+		margin-bottom: 8px;
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center;
+	}
+
+	.pContainer {
+		padding: 33px 38px;
+		background: #F3F3F3;
+		border-radius: 12px;
+		height: 550px;
+
+		* {
+			font-size: 18px;
+		}
+	}
+
+	li.top5 > a {
+		font-size: 18px;
+		height: 131px;
+		/*width: 132px;*/
+		width: 20%;
+		text-align: center;
+	}
+
+	.icon-arrow-down {
+		z-index: 1;
+	}
+
+	span.word {
+		position: relative;
+		z-index: 5;
+	}
+}
+
+@media screen and (min-width: 745px) {
+	div.kroger-top5-widget {
+		width: 744px;
+		padding: 28px 40px 40px;
+		height: 874px;
+	}
+	h1 {
+		font-size: 44px;
+		/*line-height: 100%;*/
+
+		&.mobile {
+			/*display: none;*/
+		}
+		&.desktop {
+			/*display: block;*/
 		}
 	}
 	
@@ -412,7 +564,7 @@ span.word {
 
 				li {
 					list-style-type: disc;
-					color: $blue;
+					/*color: $blue;*/
 					font-weight: bold;
 					margin-left: 20px;
 					line-height: 130%;
@@ -422,6 +574,10 @@ span.word {
 
 		h3 {
 			margin-bottom: 5px;
+		}
+
+		li a {
+			color: $blue;
 		}
 	}
 

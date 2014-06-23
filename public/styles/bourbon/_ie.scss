@@ -138,7 +138,7 @@
 	    left: 0;  
 	}  
 
-	#top5-list li a {
+	#top5-list > li > a {
 	    display: block;
 	    padding: 16px;
 	    text-decoration: none;
