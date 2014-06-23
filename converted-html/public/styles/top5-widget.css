@@ -624,4 +624,11 @@ ul#top5-list {
   .no-canvas.no-canvastext.no-geolocation.no-rgba li.top5-where a {
     left: 525px; }
 
+/* IE9 Only */
+@media screen and (min-width: 745px) {
+  .js.no-flexbox.no-flexboxlegacy.canvas.canvastext.no-webgl.no-touch.geolocation .pContainer {
+    height: 525px; }
+  .js.no-flexbox.no-flexboxlegacy.canvas.canvastext.no-webgl.no-touch.geolocation div.kroger-top5-widget {
+    height: 944px; } }
+
 

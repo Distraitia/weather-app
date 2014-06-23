@@ -1,20 +1,25 @@
 {
+  "autoPrefixer": {
+    "active": true,
+    "browsers": [
+      "last 1 version",
+      "> 5%",
+      "ie 8",
+      "ie 7"
+    ]
+  },
+  "convertHtml": {
+    "relativePaths": true
+  },
   "debug": false,
   "domain": null,
   "lintScripts": false,
   "modelSource": null,
-  "preprocessorLocations": "public",
+  "preprocessorLocations": [
+    "public"
+  ],
   "preprocessorScriptOutput": "public/scripts",
   "preprocessorStyleOutput": "public/styles",
-  "autoPrefixer": {
-  "active": true,
-  "browsers": [
-    "last 1 version", 
-    "> 5%", 
-    "ie 8", 
-    "ie 7"
-  ]
-},
   "projectDescription": "An interactive infographic for use in a modal",
   "projectName": "kroger-modal",
   "publishedId": null,
