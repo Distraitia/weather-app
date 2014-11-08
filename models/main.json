@@ -1,0 +1,68 @@
+{
+  "logo": {
+    "href": "#",
+    "img-src": "/assets/img/logo.png",
+    "img-alt": "Auburn Health Strategies logo"
+  },
+  "hero-img": {
+  	"img-src":"/assets/img/hero-img.jpg",
+  	"img-alt":"hero"
+  },
+  "home-3up": [
+	  {
+	  	"bg-img-src":"/assets/img/home-3col-1.jpg",
+	  	"bg-img-alt":"bg",
+	  	"headline":"Contacts",
+	  	"list-items": [
+		  	{
+		  		"href":"#",
+		  		"text":"lorem ipsum"
+		  	},
+		  	{
+		  		"href":"#",
+		  		"text":"sit amet"
+		  	}
+	  	]
+	  },
+	  {
+	  	"headline":"News",
+	  	"list-items": [
+		  	{
+		  		"href":"#",
+		  		"text":"Food Testing: Accreditation a Growing Trend Among Food Labs - Food Safety News"
+		  	},
+		  	{
+		  		"href":"#",
+		  		"text":"Medical Geology Plays Growing Role: Richmond Times Dispatch (scroll toward bottom of link)"
+		  	},
+		  	{
+		  		"href":"#",
+		  		"text":"More Than A Pass-Fail Exam: Understanding Proficiency Testing"
+		  	},
+		  	{
+		  		"href":"#",
+		  		"text":"Food Testing: Accreditation a Growing Trend Among Food Labs - Food Safety News"
+		  	},
+		  	{
+		  		"href":"#",
+		  		"text":"More Than A Pass-Fail Exam: Understanding Proficiency Testing"
+		  	}
+	  	]
+	  },
+	  {
+	  	"bg-img-src":"/assets/img/home-3col-3.jpg",
+	  	"bg-img-alt":"bg",
+	  	"headline-white":"Credentials",
+	  	"list-items": [
+		  	{
+		  		"href":"#",
+		  		"text":"lorem ipsum"
+		  	},
+		  	{
+		  		"href":"#",
+		  		"text":"sit amet"
+		  	}
+	  	]
+	  }
+  ]
+}

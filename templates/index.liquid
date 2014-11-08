@@ -1,9 +1,15 @@
+{% model "main.json" %}
 {% block content %}
-<header>
-	logo
-</header>
-<div class="home content-container">
-	
-</div>
+
+	{% include "header" %}
+
+	<div class="body-content-container">
+		{% include "hero-section" %}
+		<div class="featured-3up-wrap">
+			{% include "featured-3up" %}
+		</div>
+	</div>
+
+	{% include "footer" %}
 
 {% endblock %}

@@ -1,0 +1,65 @@
+html, body { padding: 0; margin: 0; float: left; font-family: "Myriad Pro", Helvetica, sans-serif; font-size: 1em; }
+html *, body * { -moz-box-sizing: border-box; box-sizing: border-box; }
+
+a { color: #a32441; text-decoration: none; transition: color .2s ease-out; }
+a:hover { color: #000; }
+
+header { height: 140px; position: relative; top: 0; left: 0; float: left; width: 100%; padding: 0; }
+header:before, header:after { content: ""; display: table; }
+header:after { clear: both; }
+header h1 { position: absolute; left: 36px; top: 50%; margin-top: -33px; margin-bottom: 0; }
+
+nav { float: right; margin-right: 40px; position: relative; top: 50%; margin-top: -.5em; }
+nav ul { list-style-type: none; padding: 0; margin: 0; }
+nav li { display: inline; border-left: 1px solid #a32441; padding-left: 10px; margin-right: 9px; font-size: 1em; }
+nav li:first-child { border-left: none; }
+
+footer { height: 96px; }
+footer span { margin-left: 36px; position: relative; top: calc(50% - .5em); /*margin-top: -.5em;*/ font-size: 1em; }
+footer span a { color: #a32441; }
+
+.hero { display: block; width: 100%; position: relative; overflow: hidden; }
+.hero .text-container { z-index: 5; position: relative; transition: width .2s ease-out; }
+.hero .text-container a { color: #fff; }
+.hero img { position: absolute; right: 0; top: 0; width: 100%; min-width: 990px; z-index: 1; transition: width .6s ease-out; }
+.hero h2 { font-family: "Myriad Pro", Helvetica, sans-serif; font-weight: lighter; font-style: normal; font-size: 2.375em; margin-bottom: 25px; transition: color .4s ease-out, font-size .4s ease-out, margin .4s ease-out; }
+.hero .btn { font-size: 16px; display: block; padding: 13px 26px 10px; background: #a32441; float: left; transition: background .2s ease-out; }
+.hero .btn:hover { background: #000; }
+
+/* Featured 3up */
+.featured-3up-wrap { width: 100%; }
+.featured-3up-wrap:before, .featured-3up-wrap:after { content: ""; display: table; }
+.featured-3up-wrap:after { clear: both; }
+.featured-3up-wrap h3 { margin: 0; font-family: "Myriad Pro", Helvetica, sans-serif; font-weight: bold; font-size: 1.25em; }
+.featured-3up-wrap h3.white { color: #fff; font-weight: 600; }
+.featured-3up-wrap .col-lg-3 { float: left; height: 0; position: relative; }
+.featured-3up-wrap .col-lg-3 img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 1; }
+.featured-3up-wrap .col-lg-3 h3, .featured-3up-wrap .col-lg-3 li, .featured-3up-wrap .col-lg-3 li a { position: relative; z-index: 5; }
+.featured-3up-wrap .col-lg-3 ul { padding: 0; list-style-type: none; }
+.featured-3up-wrap .col-lg-3 ul li:first-child { margin-top: 0; }
+.featured-3up-wrap .content-container { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+
+@media screen and (max-width: 480px) { .hero { font-size: .65em; }
+  .hero .text-container { width: 100%; padding: 0 20px; }
+  .hero a { margin-bottom: 30px; }
+  .featured-3up-wrap .col-lg-3 { width: 100%; /*padding-bottom: 100%;*/ height: auto; min-height: 320px; float: none; }
+  .featured-3up-wrap .col-lg-3 .content-container { padding: 25px; }
+  .featured-3up-wrap .col-lg-3 li { margin-top: 8px; }
+  .featured-3up-wrap .col-lg-3:first-child + .col-lg-3 .content-container { position: relative; }
+  .featured-3up-wrap .col-lg-3 ul { margin-bottom: 0; } }
+@media screen and (min-width: 481px) { .hero { height: 400px; }
+  .hero .text-container { padding: 0 0 0 36px; }
+  .featured-3up-wrap .col-lg-3 .content-container { padding: 25px; }
+  .featured-3up-wrap .col-lg-3 li { margin-top: 15px; } }
+@media screen and (max-width: 768px) and (min-width: 481px) { .hero { font-size: .8em; } }
+@media screen and (max-width: 768px) { .hero h2 { margin-top: 60px; color: #000; }
+  .hero img { opacity: .7; } }
+@media screen and (min-width: 769px) { .hero h2 { margin-top: 80px; color: #fff; } }
+@media screen and (min-width: 481px) and (max-width: 1024px) { .featured-3up-wrap .col-lg-3 { width: 50%; padding-bottom: 50%; } }
+@media screen and (min-width: 1025px) { .featured-3up-wrap .col-lg-3 { width: calc(100% / 3); padding-bottom: calc(100% / 3); } }
+@media screen and (max-width: 1180px) and (min-width: 481px) { .hero .text-container { width: 75%; } }
+@media screen and (max-width: 1180px) and (min-width: 481px) { .hero img { width: 1200px; } }
+
+@media screen and (min-width: 1181px) { .hero .text-container { width: 50%; }
+  .hero img { width: 100%; } }
+

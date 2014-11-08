@@ -1,0 +1,58 @@
+header {
+	height: 140px;
+	position: relative;
+	top: 0;
+	left: 0;
+	float: left;
+	width: 100%;
+	padding: 0;
+	@include clearfix;
+
+	h1 {
+		position: absolute;
+		left: 36px;
+		top: 50%;
+		margin-top: -33px;
+		margin-bottom: 0;
+	}
+}
+
+nav {
+	float: right;
+	margin-right: 40px;
+	position: relative;
+	top: 50%;
+	margin-top: -.5em;
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		display: inline;
+		border-left: 1px solid $burgundy;
+		padding-left: 10px;
+		margin-right: 9px;
+		font-size: 1em;
+
+		&:first-child {
+			border-left: none;
+		}
+	}
+}
+
+footer {
+	height: 96px;
+
+	span {
+		margin-left: 36px;
+		position: relative;
+		top: calc(50% - .5em);
+		/*margin-top: -.5em;*/
+		font-size: 1em;
+
+		a { color: $burgundy; }
+	}
+}

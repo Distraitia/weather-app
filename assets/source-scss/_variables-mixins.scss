@@ -1,0 +1,30 @@
+$burgundy: #a32441;
+$wt: #fff;
+$blk: #000;
+
+@mixin myriadProThin() {
+	font-family: "Myriad Pro", Helvetica, sans-serif;
+	font-weight: lighter;
+	font-style: normal;
+}
+@mixin myriadProBold() {
+	font-family: "Myriad Pro", Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+@mixin gothamSSBold {
+	font-family: 'Gotham SSm A', 'Gotham SSm B', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: ""; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}

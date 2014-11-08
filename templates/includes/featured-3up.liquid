@@ -1,0 +1,22 @@
+<div class="home-3up">
+	{% for item in model.home-3up %}
+	<div class="col-lg-3">
+		<div class="content-container">
+			{% if item.headline-white %}
+				<h3 class="white">{{ item.headline-white }}</h3>
+			{% endif %}
+			{% if item.headline %}
+				<h3>{{ item.headline }}</h3>
+			{% endif %}
+			<ul>
+				{% for listitem in item.list-items %}
+				<li><a href="{{ listitem.href }}">{{ listitem.text }}</a></li>
+				{% endfor %}
+			</ul>
+			{% if item.bg-img-src %}
+			<img src="{{ item.bg-img-src }}" alt="{{ item.bg-img-alt }}">
+			{% endif %}
+		</div>
+	</div>
+	{% endfor %}
+</div>

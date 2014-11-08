@@ -1,0 +1,20 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	float: left;
+	font-family: "Myriad Pro", Helvetica, sans-serif;
+	font-size: 1em;
+
+	* { box-sizing: border-box; }
+}
+
+a {
+	color: $burgundy;
+	text-decoration: none;
+	transition: color .2s ease-out;
+
+	&:hover {
+		color: $blk;
+	}
+}
