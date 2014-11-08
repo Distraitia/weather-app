@@ -5,7 +5,7 @@
         <title>How Your Rewards Stack Up</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        {{ "top5-widget.css" | asset_url | stylesheet_tag }}        
+        {{ "auburn.css" | asset_url | stylesheet_tag }}        
         {{ "libs/jquery-1.9.1.min.js" | asset_url | script_tag }} 
         <!--[if lt IE 9]>
           {{ "ie.js" | asset_url | script_tag }}
@@ -13,7 +13,7 @@
         {{ "libs/modernizr.min.js" | asset_url | script_tag }}
 
     </head>
-    <body class="wrapper top5">
+    <body>
         {% block content %}{% endblock %}               
         {{ "libs/jquery.collapse.js" | asset_url | script_tag }}        
         {{ "libs/jquery.corner.min.js" | asset_url | script_tag }}

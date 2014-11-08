@@ -713,7 +713,7 @@ ul#top5-list {
       padding: 0; }
       .no-canvas.no-canvastext.no-geolocation.no-rgba .top5-where > .pContainer > ul li {
         list-style-type: disc;
-        color: #00a5ea;
+        color: #000;
         /*font-weight: bold;*/
         margin-left: 20px;
         line-height: 130%; }
@@ -783,5 +783,4 @@ ul#top5-list {
     height: 525px; }
   .js.no-flexbox.no-flexboxlegacy.canvas.canvastext.no-webgl.no-touch.geolocation div.kroger-top5-widget {
     height: 944px; } }
-
 
