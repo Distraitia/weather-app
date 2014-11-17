@@ -1,5 +1,5 @@
-  // Smart resize avoids polling resize event too much
-  (function($,sr){
+// Smart resize avoids polling resize event too much
+(function($,sr){
 
     // debouncing function from John Hann
     // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
@@ -30,7 +30,7 @@
     $(window).smartresize(function(){  
         // code that takes it easy...   
     });
-  */
+    */
 
 })($,'smartresize');
 
@@ -76,7 +76,6 @@ $(document).ready(function() {
             }
         }
         setWindowSizes();
-        // $(window).on("resize", setWindowSizes);
         $(window).smartresize(setWindowSizes);
     }
 
