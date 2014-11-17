@@ -1,7 +1,32 @@
 $burgundy: #a32441;
 $wt: #fff;
 $blk: #000;
+$bg-gray: #999;
 
+@mixin openSans() {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+}
+@mixin openSansThin() {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+@mixin openSansRegular() {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+@mixin openSansDemiBold() {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+@mixin openSansBold() {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
 @mixin myriadProThin() {
 	font-family: "Myriad Pro", Helvetica, sans-serif;
 	font-weight: lighter;

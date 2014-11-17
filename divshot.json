@@ -1,0 +1,6 @@
+{
+  "name": "auburn-strat",
+  "root": "./converted-html",
+  "clean_urls": true,
+  "error_page": "y"
+}

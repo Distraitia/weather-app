@@ -1,28 +1,18 @@
 {
   "logo": {
     "href": "#",
-    "img-src": "/assets/img/logo.png",
+    "img-src": "/assets/img/logo@2x.png",
     "img-alt": "Auburn Health Strategies logo"
   },
   "hero-img": {
-  	"img-src":"/assets/img/hero-img.jpg",
+  	"img-src":"/assets/img/hero-bg-img.png",
   	"img-alt":"hero"
   },
   "home-3up": [
 	  {
 	  	"bg-img-src":"/assets/img/home-3col-1.jpg",
 	  	"bg-img-alt":"bg",
-	  	"headline":"Contacts",
-	  	"list-items": [
-		  	{
-		  		"href":"#",
-		  		"text":"lorem ipsum"
-		  	},
-		  	{
-		  		"href":"#",
-		  		"text":"sit amet"
-		  	}
-	  	]
+	  	"headline":"Contacts"
 	  },
 	  {
 	  	"headline":"News",
@@ -52,17 +42,7 @@
 	  {
 	  	"bg-img-src":"/assets/img/home-3col-3.jpg",
 	  	"bg-img-alt":"bg",
-	  	"headline-white":"Credentials",
-	  	"list-items": [
-		  	{
-		  		"href":"#",
-		  		"text":"lorem ipsum"
-		  	},
-		  	{
-		  		"href":"#",
-		  		"text":"sit amet"
-		  	}
-	  	]
+	  	"headline-white":"Credentials"
 	  }
   ]
 }
