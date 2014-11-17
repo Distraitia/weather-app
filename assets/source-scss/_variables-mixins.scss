@@ -12,6 +12,11 @@ $bg-gray: #999;
 	font-weight: 300;
 	font-style: normal;
 }
+@mixin openSansRegularOblique() {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
 @mixin openSansRegular() {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
@@ -52,4 +57,33 @@ $bg-gray: #999;
   &:after {
     clear: both;
   }
+}
+
+@font-face {
+	font-family: 'auburn-strat';
+	src:url('../fonts/auburn-strat.eot?ot2c6w');
+	src:url('../fonts/auburn-strat.eot?#iefixot2c6w') format('embedded-opentype'),
+		url('../fonts/auburn-strat.woff?ot2c6w') format('woff'),
+		url('../fonts/auburn-strat.ttf?ot2c6w') format('truetype'),
+		url('../fonts/auburn-strat.svg?ot2c6w#auburn-strat') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="as-icon-"], [class*=" as-icon-"] {
+	font-family: 'auburn-strat';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.as-icon-arrow:before {
+	content: "\e617";
 }

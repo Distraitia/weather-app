@@ -44,5 +44,54 @@
 	  	"bg-img-alt":"bg",
 	  	"headline-white":"Credentials"
 	  }
+  ],
+  "subpage-main-content-headline":"About",
+  "subpage-main-paragraphs": [
+  	{
+  		"pText":"Auburn Health Strategies provides strategic and business development services to health and science organizations.  We work closely with corporate leaders, association executives, entrepreneurs and government officials to maximize ideas and advance their products and services."
+  	},
+  	{
+  		"pText":"We aren’t consultants. To us, consultants are fleeting – deliver advice and scram.  We aren’t like that. We get to know you.  We help you think differently to accomplish your goals.  When clients consider us trusted advisors - part of the family - we are successful.  When one client thought he was our only client (he wasn’t), we knew we were on the right path."
+  	},
+  	{
+  		"pText":"So, what exactly do we do?  We create, develop and implement strategies tailored for our clients’ needs.  In classic jargon, this may entail regulatory and legislative solutions, public relations, communications, relationship and coalition-building, and advocacy. We employ this multi-disciplinary approach to help our clients succeed."
+  	},
+  	{
+  		"pText":"You won’t find a client list on our site. We respect and value our client’s privacy. However, we can give you a glimpse into our success.  Here are just a few of our statistics, notable accomplishments, and excerpts from thank-you notes we’ve received:"
+  	}
+  ],
+  "subpage-main-list": [
+  	{
+  		"text":"Worked with established, health services-related company to increase its market share by more than 33% within five years."
+  	},
+  	{
+  		"text":"Re-launched educational products for national health professional organization, realizing an increase in users by as much as fourteen fold."
+  	},
+  	{
+  		"text":"Convened a national consensus conference, referenced in Newsweek and by the Institute of Medicine, gathering experts representing the fields of medicine, law, ethics, consumers, academia and industry, whose results were converted into federal legislation."
+  	},
+  	{
+  		"text":"Competed with a multinational corporation to acquire federal contract for smaller organization."
+  	},
+  	{
+  		"text":"Fulfilled international opportunity for client to expand growth and visibility."
+  	},
+  	{
+  		"text":"Conducted focus groups across the country to assess the use of health care quality tools."
+  	}
+  ],
+  "subpage-testimonials": [
+	  {
+	  	"text":"It quickly became apparent to this ‘newcomer’ how valuable you are to steering (us) toward our goals.",
+	  	"author":"Auburn Health Strategies’ client"
+	  },
+	  {
+	  	"text":"I congratulate you on your wise choice of Robin Strombler to work with Congress on this issue.  She is very well liked and trusted in D.C.",
+	  	"author":"Note from Chief of Staff for U.S. Member of Congress to Auburn Health Strategies’ client"
+	  },
+	  {
+	  	"text":"I want you to know how much we appreciate you every week.",
+	  	"author":"Auburn Health Strategies’ client"
+	  }
   ]
 }
