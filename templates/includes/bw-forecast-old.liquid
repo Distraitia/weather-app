@@ -1,0 +1,37 @@
+<!-- <div class="bluewolf bluewolf-A2">
+	
+	<h3>Get Weather Info</h3>
+
+	<button class="bw-btn" onclick="b()">Submit</button>
+	
+	<p class="weather-intro">Here's the weather:
+	<br><span id="weather"><span><p> -->
+    
+
+
+	<!-- Forecast.io Script -->
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        function b() {
+
+            var apiKey = 'edc37d1226a5c86f5dcf083fb7b83533';
+            var url = 'https://api.forecast.io/forecast/';
+            var lati = 33.886586;
+            var longi = -84.461214;
+            var data;
+
+            var introP = $(".weather-intro"),
+            	forecastP = $("#weather");
+
+            $.getJSON(url + apiKey + "/" + lati + "," + longi + "?callback=?", function(data) {
+             	console.log(data);
+             	$('#weather').html('Current temperature: ' + data.currently.temperature + "&deg;F");
+            });
+        }
+    </script> -->
+
+    
+
+</div>
+
+<iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=33.886586&lon=-84.461214&name=Atlanta, GA"></iframe>

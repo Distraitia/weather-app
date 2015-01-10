@@ -1,0 +1,54 @@
+<!doctype html>
+<!--[if lt IE 9 ]> <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Bluewolf Interview Assignments</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+        
+        {{ "bluewolf.css" | asset_url | stylesheet_tag }}        
+        {{ "libs/jquery-1.9.1.min.js" | asset_url | script_tag }}
+
+    </head>
+    <body>
+        {% block content %}{% endblock %}               
+        {{ "libs/jquery.collapse.js" | asset_url | script_tag }}        
+        {{ "libs/jquery.corner.min.js" | asset_url | script_tag }}
+        {{ "bluewolf.js" | asset_url | script_tag }}
+    </body>
+</html>
+
+<!-- A2 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- My stuff -->
+    <title>Weather App</title>
+
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- Google Maps Stuff -->
+    <!-- <style type="text/css">
+        html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+    </style> -->
+    <!-- Added parameters -->
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBXie3pu3zEeBDttTOZYINd5sv-qg5sRVs&signed_in=true&libraries=places"></script> -->
+
+    <!-- Forecast.io Stuff -->
+    
+    {{ "bluewolf.js" | asset_url | script_tag }}
+
+</head>
+<body>
+
+    {% block content %}{% endblock %}
+
+    {{ "libs/jquery.collapse.js" | asset_url | script_tag }}        
+    {{ "libs/jquery.corner.min.js" | asset_url | script_tag }}
+    {{ "bluewolf.css" | asset_url | stylesheet_tag }}
+
+</body>
+</html>

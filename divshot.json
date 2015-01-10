@@ -1,5 +1,5 @@
 {
-  "name": "auburn-strat",
+  "name": "test-project",
   "root": "./converted-html",
   "clean_urls": true,
   "error_page": "y"

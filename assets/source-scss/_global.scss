@@ -5,13 +5,20 @@ body {
 	float: left;
 	width: 100%;
 	font-family: "Open Sans", sans-serif;
-	font-size: 1em;
+	font-size: 16px;
 
 	* { box-sizing: border-box; }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin-top: 0;
+}
+
 a {
-	color: $burgundy;
 	text-decoration: none;
 	transition: color .2s ease-out;
 
@@ -24,5 +31,8 @@ img { border: none; }
 
 footer {
 	clear: both;
-	border-top: 1px solid #ddd;
+}
+
+p {
+	line-height: 1.2em;
 }

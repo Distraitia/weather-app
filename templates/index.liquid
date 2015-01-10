@@ -1,15 +1,20 @@
+{% layout "layout" %}
 {% model "main.json" %}
+
 {% block content %}
+<div class="index-container">
+	<h1>{{ model.sitetitle }}</h1>
 
-	{% include "header" %}
-
-	<div class="body-content-container">
-		{% include "hero-section" %}
-		<div class="featured-3up-wrap">
-			{% include "featured-3up" %}
-		</div>
+	<h3>API Demos</h3>
+	<div class="dot">
+		<a href="bw-forecast">Forecast.io</a>
+	</div>
+	<div class="dot">
+		<a href="bw-map">Google Maps</a>
 	</div>
 
-	{% include "footer" %}
+	<hr>
 
+	<h2>The Weather App</h2>
+</div>
 {% endblock %}
